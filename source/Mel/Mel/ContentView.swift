@@ -72,9 +72,8 @@ public struct ImagePicker: UIViewControllerRepresentable {
     public func imagePickerControllerDidCancel(_: UIImagePickerController) {
       self.onDismiss()
     }
-    
   }
-  
+
 }
 
 struct ContentView_Previews: PreviewProvider {
