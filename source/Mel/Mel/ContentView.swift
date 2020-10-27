@@ -8,16 +8,25 @@
 import SwiftUI
 import UIKit
 
+
+
+
+
+
 struct ContentView: View {
-  @State var selectedImageName: String = "Select an image"
+  @State var selectedImage: UIImage?
   var body: some View {
-    
     NavigationView {
       VStack {
-        
-        Text(selectedImageName)
+        if let image = selectedImage {
+          Image(uiImage: image)
+            .resizable()
+            .renderingMode(.original)
+        } else {
+          Text("Select an image")
+        }
         ImagePicker(sourceType: .photoLibrary) { (image) in
-          self.selectedImageName = image.description
+          self.selectedImage = image
         }
         .navigationBarItems(trailing: NavigationLink("Next", destination: Text("detail")))
       }      

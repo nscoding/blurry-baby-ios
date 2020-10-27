@@ -14,6 +14,7 @@
 		132591F02547AE4C00A6639A /* MelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132591EF2547AE4C00A6639A /* MelTests.swift */; };
 		132591FB2547AE4C00A6639A /* MelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132591FA2547AE4C00A6639A /* MelUITests.swift */; };
 		132592172547C19800A6639A /* FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132592162547C19800A6639A /* FaceDetection.swift */; };
+		2956353F2547CE09007BDD70 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956353E2547CE09007BDD70 /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		132591FA2547AE4C00A6639A /* MelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelUITests.swift; sourceTree = "<group>"; };
 		132591FC2547AE4C00A6639A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		132592162547C19800A6639A /* FaceDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetection.swift; sourceTree = "<group>"; };
+		2956353E2547CE09007BDD70 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		132591DC2547AE4B00A6639A /* Mel */ = {
 			isa = PBXGroup;
 			children = (
+				2956353D2547CE09007BDD70 /* Functional */,
 				132591DD2547AE4B00A6639A /* MelApp.swift */,
 				132591DF2547AE4B00A6639A /* ContentView.swift */,
 				132591E12547AE4C00A6639A /* Assets.xcassets */,
@@ -131,6 +134,14 @@
 				132591FC2547AE4C00A6639A /* Info.plist */,
 			);
 			path = MelUITests;
+			sourceTree = "<group>";
+		};
+		2956353D2547CE09007BDD70 /* Functional */ = {
+			isa = PBXGroup;
+			children = (
+				2956353E2547CE09007BDD70 /* Operators.swift */,
+			);
+			path = Functional;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				132592172547C19800A6639A /* FaceDetection.swift in Sources */,
+				2956353F2547CE09007BDD70 /* Operators.swift in Sources */,
 				132591E02547AE4B00A6639A /* ContentView.swift in Sources */,
 				132591DE2547AE4B00A6639A /* MelApp.swift in Sources */,
 			);
