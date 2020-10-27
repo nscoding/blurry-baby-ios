@@ -21,7 +21,7 @@ struct HomeView: View {
           Text("Select an image")
         }
         ImagePicker(sourceType: .photoLibrary) { (image) in
-          self.selectedImage = image
+          self.selectedImage =  image.blurredImage(at:FaceDetection.rects(for: image), radius:100)
         }
         .navigationBarItems(trailing: NavigationLink("Next", destination: Text("detail")))
       }      
@@ -82,6 +82,6 @@ public struct ImagePicker: UIViewControllerRepresentable {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    HomeView()
+    HomeView().previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro Max"))
   }
 }
