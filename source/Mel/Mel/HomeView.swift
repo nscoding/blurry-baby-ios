@@ -8,11 +8,6 @@
 import SwiftUI
 import UIKit
 
-
-
-
-
-
 struct HomeView: View {
   @State var selectedImage: UIImage?
   var body: some View {
