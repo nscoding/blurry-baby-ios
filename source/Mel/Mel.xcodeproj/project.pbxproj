@@ -13,7 +13,6 @@
 		132591E52547AE4C00A6639A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 132591E42547AE4C00A6639A /* Preview Assets.xcassets */; };
 		132591F02547AE4C00A6639A /* MelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132591EF2547AE4C00A6639A /* MelTests.swift */; };
 		132591FB2547AE4C00A6639A /* MelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132591FA2547AE4C00A6639A /* MelUITests.swift */; };
-		132592172547C19800A6639A /* FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132592162547C19800A6639A /* FaceDetection.swift */; };
 		132592422547D63300A6639A /* FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325923F2547D63300A6639A /* FaceDetection.swift */; };
 		132592432547D63300A6639A /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132592412547D63300A6639A /* UIImage+Blur.swift */; };
 		2956353F2547CE09007BDD70 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956353E2547CE09007BDD70 /* Operators.swift */; };
@@ -49,7 +48,6 @@
 		132591F62547AE4C00A6639A /* MelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		132591FA2547AE4C00A6639A /* MelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelUITests.swift; sourceTree = "<group>"; };
 		132591FC2547AE4C00A6639A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		132592162547C19800A6639A /* FaceDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetection.swift; sourceTree = "<group>"; };
 		1325923F2547D63300A6639A /* FaceDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetection.swift; sourceTree = "<group>"; };
 		132592412547D63300A6639A /* UIImage+Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Blur.swift"; sourceTree = "<group>"; };
 		2956353E2547CE09007BDD70 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 		1325923A2547D62300A6639A /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				132592162547C19800A6639A /* FaceDetection.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -304,7 +301,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				132592422547D63300A6639A /* FaceDetection.swift in Sources */,
-				132592172547C19800A6639A /* FaceDetection.swift in Sources */,
 				2956353F2547CE09007BDD70 /* Operators.swift in Sources */,
 				132591E02547AE4B00A6639A /* ContentView.swift in Sources */,
 				132592432547D63300A6639A /* UIImage+Blur.swift in Sources */,
