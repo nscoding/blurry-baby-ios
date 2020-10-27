@@ -13,7 +13,8 @@
 		132591E52547AE4C00A6639A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 132591E42547AE4C00A6639A /* Preview Assets.xcassets */; };
 		132591F02547AE4C00A6639A /* MelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132591EF2547AE4C00A6639A /* MelTests.swift */; };
 		132591FB2547AE4C00A6639A /* MelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132591FA2547AE4C00A6639A /* MelUITests.swift */; };
-		132592172547C19800A6639A /* FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132592162547C19800A6639A /* FaceDetection.swift */; };
+		132592322547D57900A6639A /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325922F2547D57900A6639A /* UIImage+Blur.swift */; };
+		132592332547D57900A6639A /* FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132592312547D57900A6639A /* FaceDetection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,8 @@
 		132591F62547AE4C00A6639A /* MelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		132591FA2547AE4C00A6639A /* MelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelUITests.swift; sourceTree = "<group>"; };
 		132591FC2547AE4C00A6639A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		132592162547C19800A6639A /* FaceDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetection.swift; sourceTree = "<group>"; };
+		1325922F2547D57900A6639A /* UIImage+Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Blur.swift"; sourceTree = "<group>"; };
+		132592312547D57900A6639A /* FaceDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +102,10 @@
 				132591DD2547AE4B00A6639A /* MelApp.swift */,
 				132591DF2547AE4B00A6639A /* ContentView.swift */,
 				132591E12547AE4C00A6639A /* Assets.xcassets */,
+				132592302547D57900A6639A /* Detection */,
+				1325922E2547D57900A6639A /* Extensions */,
 				132591E62547AE4C00A6639A /* Info.plist */,
 				132591E32547AE4C00A6639A /* Preview Content */,
-				132592162547C19800A6639A /* FaceDetection.swift */,
 			);
 			path = Mel;
 			sourceTree = "<group>";
@@ -131,6 +134,22 @@
 				132591FC2547AE4C00A6639A /* Info.plist */,
 			);
 			path = MelUITests;
+			sourceTree = "<group>";
+		};
+		1325922E2547D57900A6639A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1325922F2547D57900A6639A /* UIImage+Blur.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		132592302547D57900A6639A /* Detection */ = {
+			isa = PBXGroup;
+			children = (
+				132592312547D57900A6639A /* FaceDetection.swift */,
+			);
+			path = Detection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				132592172547C19800A6639A /* FaceDetection.swift in Sources */,
+				132592332547D57900A6639A /* FaceDetection.swift in Sources */,
+				132592322547D57900A6639A /* UIImage+Blur.swift in Sources */,
 				132591E02547AE4B00A6639A /* ContentView.swift in Sources */,
 				132591DE2547AE4B00A6639A /* MelApp.swift in Sources */,
 			);
