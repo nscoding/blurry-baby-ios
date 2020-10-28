@@ -21,7 +21,7 @@ struct HomeView: View {
           Text("Select an image")
         }
         ImagePicker(sourceType: .photoLibrary) { (image) in
-          self.selectedImage =  image.blurredImage(at:FaceDetection.rects(for: image), radius:100)
+          self.selectedImage =  image.blurredImage(at:FaceDetection.rects(for: image, offset: -20), radius: 20)
         }
         .navigationBarItems(trailing: NavigationLink("Next", destination: Text("detail")))
       }      

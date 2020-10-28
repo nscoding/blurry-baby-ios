@@ -20,7 +20,7 @@ extension UIImage {
   }
   
   private func drawImageInRect(inputImage: UIImage, inRect imageRect: CGRect) -> UIImage {
-    UIGraphicsBeginImageContext(self.size)
+    UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
     self.draw(in: CGRect(x: 0.0, y: 0.0, width: self.size.width, height: self.size.height))
     inputImage.draw(in: imageRect)
     guard let newImage = UIGraphicsGetImageFromCurrentImageContext() else { return inputImage }
@@ -29,20 +29,22 @@ extension UIImage {
   }
   
   private func applyBlurInRect(rect: CGRect, withRadius radius: Double) -> UIImage {
-    if let partOfImageAtRect = self.getImageFromRect(rect: rect),
-       let blurredZone = partOfImageAtRect.blurImage(withRadius: radius) {
-      return self.drawImageInRect(inputImage: blurredZone, inRect: rect)
+    guard let partOfImageAtRect = self.getImageFromRect(rect: rect) else {
+      return self
     }
-    return self
+    guard let (blurredImage, blurredRect) = partOfImageAtRect.blurImage(withRadius: radius) else {
+      return self
+    }
+    return self.drawImageInRect(inputImage: blurredImage,
+                                inRect: rect.insetBy(dx: blurredRect.origin.x, dy: blurredRect.origin.y))
   }
   
-  private func blurImage(withRadius radius: Double) -> UIImage? {
+  private func blurImage(withRadius radius: Double) -> (UIImage, CGRect)? {
     let inputImage = CIImage(image: self)
-    if let filter = CIFilter(name: "CIGaussianBlur") {
-      filter.setValue(inputImage, forKey: kCIInputImageKey)
-      filter.setValue((radius), forKey: kCIInputRadiusKey)
-      if let blurred = filter.outputImage {
-        return UIImage.init(ciImage: blurred)
+    if let filteredImage = inputImage?.applyingGaussianBlur(sigma: radius) {
+      let context = CIContext(options: nil)
+      if let cgImage = context.createCGImage(filteredImage, from: filteredImage.extent) {
+        return (UIImage(cgImage: cgImage), filteredImage.extent)
       }
     }
     return nil
