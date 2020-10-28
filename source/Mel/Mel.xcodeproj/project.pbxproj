@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		132591DE2547AE4B00A6639A /* MelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132591DD2547AE4B00A6639A /* MelApp.swift */; };
-		132591E02547AE4B00A6639A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132591DF2547AE4B00A6639A /* HomeView.swift */; };
 		132591E22547AE4C00A6639A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 132591E12547AE4C00A6639A /* Assets.xcassets */; };
-		132591E52547AE4C00A6639A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 132591E42547AE4C00A6639A /* Preview Assets.xcassets */; };
 		132591F02547AE4C00A6639A /* MelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132591EF2547AE4C00A6639A /* MelTests.swift */; };
 		132591FB2547AE4C00A6639A /* MelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132591FA2547AE4C00A6639A /* MelUITests.swift */; };
 		132592422547D63300A6639A /* FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325923F2547D63300A6639A /* FaceDetection.swift */; };
 		132592432547D63300A6639A /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132592412547D63300A6639A /* UIImage+Blur.swift */; };
 		13F5915C25491E6E00672F36 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F5915B25491E6E00672F36 /* PhotoLibrary.swift */; };
-		1DFBD8E02549058400C01F60 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBD8DF2549058400C01F60 /* DetailView.swift */; };
+		13F59168254921E100672F36 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F59164254921E100672F36 /* DetailView.swift */; };
+		13F59169254921E100672F36 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F59165254921E100672F36 /* HomeView.swift */; };
+		13F5916A254921E100672F36 /* MelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F59166254921E100672F36 /* MelApp.swift */; };
+		13F5916B254921E100672F36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F59167254921E100672F36 /* ContentView.swift */; };
 		1DFBD8F825491E0B00C01F60 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBD8F725491E0B00C01F60 /* LazyView.swift */; };
 		2956353F2547CE09007BDD70 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956353E2547CE09007BDD70 /* Operators.swift */; };
 /* End PBXBuildFile section */
@@ -40,10 +40,7 @@
 
 /* Begin PBXFileReference section */
 		132591DA2547AE4B00A6639A /* Mel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		132591DD2547AE4B00A6639A /* MelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelApp.swift; sourceTree = "<group>"; };
-		132591DF2547AE4B00A6639A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		132591E12547AE4C00A6639A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		132591E42547AE4C00A6639A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		132591E62547AE4C00A6639A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		132591EB2547AE4C00A6639A /* MelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		132591EF2547AE4C00A6639A /* MelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelTests.swift; sourceTree = "<group>"; };
@@ -54,7 +51,10 @@
 		1325923F2547D63300A6639A /* FaceDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetection.swift; sourceTree = "<group>"; };
 		132592412547D63300A6639A /* UIImage+Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Blur.swift"; sourceTree = "<group>"; };
 		13F5915B25491E6E00672F36 /* PhotoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
-		1DFBD8DF2549058400C01F60 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		13F59164254921E100672F36 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		13F59165254921E100672F36 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		13F59166254921E100672F36 /* MelApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MelApp.swift; sourceTree = "<group>"; };
+		13F59167254921E100672F36 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1DFBD8F725491E0B00C01F60 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		2956353E2547CE09007BDD70 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				132591DC2547AE4B00A6639A /* Mel */,
+				132591E62547AE4C00A6639A /* Info.plist */,
 				132591EE2547AE4C00A6639A /* MelTests */,
 				132591F92547AE4C00A6639A /* MelUITests */,
 				132591DB2547AE4B00A6639A /* Products */,
@@ -108,27 +109,14 @@
 		132591DC2547AE4B00A6639A /* Mel */ = {
 			isa = PBXGroup;
 			children = (
+				132591E12547AE4C00A6639A /* Assets.xcassets */,
 				1325923E2547D63300A6639A /* Detection */,
 				132592402547D63300A6639A /* Extensions */,
 				2956353D2547CE09007BDD70 /* Functional */,
-				132591DD2547AE4B00A6639A /* MelApp.swift */,
-				132591DF2547AE4B00A6639A /* HomeView.swift */,
 				1DFBD8F625491DFB00C01F60 /* ViewExtensions */,
-				1DFBD8DF2549058400C01F60 /* DetailView.swift */,
-				132591E12547AE4C00A6639A /* Assets.xcassets */,
-				132591E62547AE4C00A6639A /* Info.plist */,
-				13F5915A25491E6E00672F36 /* Photos */,
-				132591E32547AE4C00A6639A /* Preview Content */,
+				13F59163254921E100672F36 /* UI */,
 			);
 			path = Mel;
-			sourceTree = "<group>";
-		};
-		132591E32547AE4C00A6639A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				132591E42547AE4C00A6639A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		132591EE2547AE4C00A6639A /* MelTests */ = {
@@ -152,6 +140,7 @@
 		1325923A2547D62300A6639A /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
+				13F5915B25491E6E00672F36 /* PhotoLibrary.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -172,13 +161,17 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		13F5915A25491E6E00672F36 /* Photos */ = {
+		13F59163254921E100672F36 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				13F5915B25491E6E00672F36 /* PhotoLibrary.swift */,
+				13F59164254921E100672F36 /* DetailView.swift */,
+				13F59165254921E100672F36 /* HomeView.swift */,
+				13F59166254921E100672F36 /* MelApp.swift */,
+				13F59167254921E100672F36 /* ContentView.swift */,
 			);
-			path = Photos;
-    }
+			path = UI;
+			sourceTree = "<group>";
+		};
 		1DFBD8F625491DFB00C01F60 /* ViewExtensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,7 +291,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				132591E52547AE4C00A6639A /* Preview Assets.xcassets in Resources */,
 				132591E22547AE4C00A6639A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,12 +317,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				132592422547D63300A6639A /* FaceDetection.swift in Sources */,
-				1DFBD8E02549058400C01F60 /* DetailView.swift in Sources */,
+				13F59169254921E100672F36 /* HomeView.swift in Sources */,
+				13F59168254921E100672F36 /* DetailView.swift in Sources */,
 				2956353F2547CE09007BDD70 /* Operators.swift in Sources */,
-				132591E02547AE4B00A6639A /* HomeView.swift in Sources */,
 				132592432547D63300A6639A /* UIImage+Blur.swift in Sources */,
+				13F5916B254921E100672F36 /* ContentView.swift in Sources */,
 				13F5915C25491E6E00672F36 /* PhotoLibrary.swift in Sources */,
-				132591DE2547AE4B00A6639A /* MelApp.swift in Sources */,
+				13F5916A254921E100672F36 /* MelApp.swift in Sources */,
 				1DFBD8F825491E0B00C01F60 /* LazyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
