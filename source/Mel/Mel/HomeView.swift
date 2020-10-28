@@ -7,9 +7,15 @@
 
 import SwiftUI
 import UIKit
+import Combine
 
 struct HomeView: View {
   @State var selectedImage: UIImage?
+  
+  var destination: some View {
+    return LazyView(DetailView(image: self.selectedImage ?? UIImage(systemName: "music.note")!))
+  }
+  
   var body: some View {
     NavigationView {
       VStack {
@@ -21,9 +27,9 @@ struct HomeView: View {
           Text("Select an image")
         }
         ImagePicker(sourceType: .photoLibrary) { (image) in
-          self.selectedImage =  image.blurredImage(at:FaceDetection.rects(for: image, offset: -30), radius: 20)
+          self.selectedImage =  image.blurredImage(at:FaceDetection.rects(for: image, offset: 20), radius: 20)
         }
-        .navigationBarItems(trailing: NavigationLink("Next", destination: Text("detail")))
+        .navigationBarItems(trailing: NavigationLink("Next", destination: self.destination))
       }      
     }
   }
@@ -77,7 +83,7 @@ public struct ImagePicker: UIViewControllerRepresentable {
       self.onDismiss()
     }
   }
-
+  
 }
 
 struct ContentView_Previews: PreviewProvider {
