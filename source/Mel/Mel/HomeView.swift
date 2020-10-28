@@ -9,16 +9,6 @@ import SwiftUI
 import UIKit
 import Combine
 
-struct LazyView<Content: View>: View {
-    let build: () -> Content
-    init(_ build: @autoclosure @escaping () -> Content) {
-        self.build = build
-    }
-    var body: Content {
-        build()
-    }
-}
-
 struct HomeView: View {
   @State var selectedImage: UIImage?
   

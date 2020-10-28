@@ -16,6 +16,7 @@
 		132592422547D63300A6639A /* FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325923F2547D63300A6639A /* FaceDetection.swift */; };
 		132592432547D63300A6639A /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132592412547D63300A6639A /* UIImage+Blur.swift */; };
 		1DFBD8E02549058400C01F60 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBD8DF2549058400C01F60 /* DetailView.swift */; };
+		1DFBD8F825491E0B00C01F60 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBD8F725491E0B00C01F60 /* LazyView.swift */; };
 		2956353F2547CE09007BDD70 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956353E2547CE09007BDD70 /* Operators.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		1325923F2547D63300A6639A /* FaceDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetection.swift; sourceTree = "<group>"; };
 		132592412547D63300A6639A /* UIImage+Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Blur.swift"; sourceTree = "<group>"; };
 		1DFBD8DF2549058400C01F60 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1DFBD8F725491E0B00C01F60 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		2956353E2547CE09007BDD70 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				2956353D2547CE09007BDD70 /* Functional */,
 				132591DD2547AE4B00A6639A /* MelApp.swift */,
 				132591DF2547AE4B00A6639A /* HomeView.swift */,
+				1DFBD8F625491DFB00C01F60 /* ViewExtensions */,
 				1DFBD8DF2549058400C01F60 /* DetailView.swift */,
 				132591E12547AE4C00A6639A /* Assets.xcassets */,
 				132591E62547AE4C00A6639A /* Info.plist */,
@@ -164,6 +167,14 @@
 				132592412547D63300A6639A /* UIImage+Blur.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1DFBD8F625491DFB00C01F60 /* ViewExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				1DFBD8F725491E0B00C01F60 /* LazyView.swift */,
+			);
+			path = ViewExtensions;
 			sourceTree = "<group>";
 		};
 		2956353D2547CE09007BDD70 /* Functional */ = {
@@ -309,6 +320,7 @@
 				132591E02547AE4B00A6639A /* HomeView.swift in Sources */,
 				132592432547D63300A6639A /* UIImage+Blur.swift in Sources */,
 				132591DE2547AE4B00A6639A /* MelApp.swift in Sources */,
+				1DFBD8F825491E0B00C01F60 /* LazyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
