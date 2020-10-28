@@ -13,11 +13,17 @@ struct DetailView: View {
     Image(uiImage: image)
       .clipped()
       .navigationBarTitle("Detail")
+      .navigationBarItems(trailing: Button("Save", action: {
+        print("woowow")
+      }))
+      .background(Color.red)
   }
 }
 
 struct DetailView_Previews: PreviewProvider {
   static var previews: some View {
-    DetailView(image: UIImage(systemName: "music.note")!)
+    NavigationView {
+      DetailView(image: UIImage(systemName: "music.note")!)
+    }
   }
 }
