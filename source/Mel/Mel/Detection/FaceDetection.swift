@@ -1,8 +1,7 @@
 //
 //  FaceDetection.swift
-//  Mel
 //
-//  Created by Patrik Tomas Chamelo on 10/26/20.
+//  Copyright © 2020 Kostas Kremizas / Patrik Tomas Chamelo. All rights reserved.
 //
 
 import Foundation

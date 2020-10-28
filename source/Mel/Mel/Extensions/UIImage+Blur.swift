@@ -1,8 +1,7 @@
 //
 //  UIImage+Blur.swift
-//  Mel
 //
-//  Created by Patrik Tomas Chamelo on 10/26/20.
+//  Copyright © 2020 Kostas Kremizas / Patrik Tomas Chamelo. All rights reserved.
 //
 
 import Foundation
@@ -35,26 +34,29 @@ extension UIImage {
     guard let (blurredImage, blurredRect) = partOfImageAtRect.blurImage(withRadius: radius) else {
       return self
     }
-    return self.drawImageInRect(inputImage: blurredImage,
-                                inRect: rect.insetBy(dx: blurredRect.origin.x, dy: blurredRect.origin.y))
+    return self.drawImageInRect(
+      inputImage: blurredImage,
+      inRect: rect.insetBy(dx: blurredRect.origin.x, dy: blurredRect.origin.y)
+    )
   }
   
   private func blurImage(withRadius radius: Double) -> (UIImage, CGRect)? {
     let inputImage = CIImage(image: self)
-    if let filteredImage = inputImage?.applyingGaussianBlur(sigma: radius) {
-      let context = CIContext(options: nil)
-      if let cgImage = context.createCGImage(filteredImage, from: filteredImage.extent) {
-        return (UIImage(cgImage: cgImage), filteredImage.extent)
-      }
+    guard let filteredImage = inputImage?.applyingGaussianBlur(sigma: radius) else {
+      return nil
     }
-    return nil
+
+    let context = CIContext(options: nil)
+    guard let cgImage = context.createCGImage(filteredImage, from: filteredImage.extent) else {
+      return nil
+    }
+    return (UIImage(cgImage: cgImage), filteredImage.extent)
   }
   
   private func getImageFromRect(rect: CGRect) -> UIImage? {
-    if let cg = self.cgImage,
-       let partOfImage = cg.cropping(to: rect) {
-      return UIImage(cgImage: partOfImage)
+    guard let cg = self.cgImage, let partOfImage = cg.cropping(to: rect) else {
+      return self
     }
-    return nil
+    return UIImage(cgImage: partOfImage)
   }
 }
